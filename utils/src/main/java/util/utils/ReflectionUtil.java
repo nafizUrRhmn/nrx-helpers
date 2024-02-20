@@ -1,11 +1,8 @@
+package util.utils;
+
 import java.lang.reflect.Method;
 
-public class CommonUtils {
-
-    public static Boolean isBitValueExist(int total, int bitValue){
-        return (total & bitValue)!=0;
-    }
-
+public class ReflectionUtil {
     public static Object callingInstanceByReflection(String className){
         try{
             Class<?> clazz = Class.forName(className);
